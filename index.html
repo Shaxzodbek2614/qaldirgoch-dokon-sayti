@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qaldirg‘och — Maishiy texnika do‘koni</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Header qismi -->
-    <header>
-        <h1><a href="index.html">Qaldirg‘och</a></h1>
+    <header class="header">
+        <h1 class="logo"><a href="index.html">Qaldirg‘och</a></h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Bosh sahifa</a></li>
+            <ul class="menyu">
+                <li><a href="index.html" aria-current="page">Bosh sahifa</a></li>
                 <li><a href="katalog.html">Katalog</a></li>
                 <li><a href="savat.html">Savat</a></li>
             </ul>
@@ -20,18 +21,18 @@
     </header>
 
     <!-- Asosiy mazmun -->
-    <main>
+    <main class="asosiy">
         <!-- Banner bo'limi -->
-        <section>
-            <h2>Uyingiz uchun ishonchli texnika</h2>
-            <p>Xonadoningiz uchun sifatli, zamonaviy va kafolatlangan maishiy texnikalarni qulay narxlarda xarid qiling.</p>
-            <a href="katalog.html">Katalogga o‘tish</a>
+        <section class="banner">
+            <h2 class="banner-sarlavha">Uyingiz uchun ishonchli texnika</h2>
+            <p class="banner-matn">Xonadoningiz uchun sifatli, zamonaviy va kafolatlangan maishiy texnikalarni qulay narxlarda xarid qiling.</p>
+            <a class="banner-tugma" href="katalog.html">Katalogga o‘tish</a>
         </section>
 
         <!-- Toifalar bo'limi -->
-        <section>
-            <h2>Toifalar</h2>
-            <ul>
+        <section class="bolim">
+            <h2 class="bolim-sarlavha">Toifalar</h2>
+            <ul class="toifalar">
                 <li><a href="katalog.html?category=televizorlar">Televizorlar</a></li>
                 <li><a href="katalog.html?category=oshxona">Oshxona texnikasi</a></li>
                 <li><a href="katalog.html?category=uy-uchun">Uy uchun</a></li>
@@ -40,45 +41,47 @@
         </section>
 
         <!-- Mashhur mahsulotlar bo'limi -->
-        <section>
-            <h2>Mashhur mahsulotlar</h2>
+        <section class="bolim">
+            <h2 class="bolim-sarlavha">Mashhur mahsulotlar</h2>
 
-            <!-- 1-mahsulot -->
-            <article>
-                <img src="rasmlar/monitor.png" alt="Monitor 43 dyuym" width="250">
-                <h3>Monitor 43 dyuym</h3>
-                <p>830 000 so‘m</p>
-                <button type="button">Savatga</button>
-            </article>
+            <div class="mahsulotlar">
+                <!-- 1-mahsulot -->
+                <article class="kartochka">
+                    <img class="kartochka-rasm" src="rasmlar/monitor.png" alt="Monitor 43 dyuym" width="250">
+                    <h3 class="kartochka-nomi">Monitor 43 dyuym</h3>
+                    <p class="narx">830 000 so‘m</p>
+                    <button class="tugma" type="button">Savatga</button>
+                </article>
 
-            <!-- 2-mahsulot -->
-            <article>
-                <img src="rasmlar/hp.png" alt="HP noutbuki" width="250">
-                <h3>HP</h3>
-                <p>7 200 000 so‘m</p>
-                <button type="button">Savatga</button>
-            </article>
+                <!-- 2-mahsulot -->
+                <article class="kartochka">
+                    <img class="kartochka-rasm" src="rasmlar/hp.png" alt="HP noutbuki" width="250">
+                    <h3 class="kartochka-nomi">HP</h3>
+                    <p class="narx">7 200 000 so‘m</p>
+                    <button class="tugma" type="button">Savatga</button>
+                </article>
 
-            <!-- 3-mahsulot -->
-            <article>
-                <img src="rasmlar/acer-8-256.png" alt="Acer noutbuki" width="250">
-                <h3>Acer</h3>
-                <p>6 500 000 so‘m</p>
-                <button type="button">Savatga</button>
-            </article>
+                <!-- 3-mahsulot -->
+                <article class="kartochka">
+                    <img class="kartochka-rasm" src="rasmlar/acer-8-256.png" alt="Acer noutbuki" width="250">
+                    <h3 class="kartochka-nomi">Acer</h3>
+                    <p class="narx">6 500 000 so‘m</p>
+                    <button class="tugma" type="button">Savatga</button>
+                </article>
 
-            <!-- 4-mahsulot -->
-            <article>
-                <img src="rasmlar/krasovka.png" alt="Krasovka" width="250">
-                <h3>Krasovka</h3>
-                <p>180 000 so‘m</p>
-                <button type="button">Savatga</button>
-            </article>
+                <!-- 4-mahsulot -->
+                <article class="kartochka">
+                    <img class="kartochka-rasm" src="rasmlar/krasovka.png" alt="Krasovka" width="250">
+                    <h3 class="kartochka-nomi">Krasovka</h3>
+                    <p class="narx">180 000 so‘m</p>
+                    <button class="tugma" type="button">Savatga</button>
+                </article>
+            </div>
         </section>
     </main>
 
     <!-- Footer qismi -->
-    <footer>
+    <footer class="footer">
         <p>Ish vaqti: har kuni 8:00–20:00</p>
         <p>&copy; 2026 “Qaldirg‘och” maishiy texnika do‘koni. Barcha huquqlar himoyalangan.</p>
     </footer>
